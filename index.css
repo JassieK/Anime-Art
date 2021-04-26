@@ -1,0 +1,357 @@
+body,
+head {
+  background-image: linear-gradient(to bottom right, rgb(233, 173, 203), lemonchiffon);
+}
+
+body {
+  margin: 25px;
+}
+
+#Navbar {
+  color: azure;
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+  overflow: hidden;
+  background-color: hotpink;
+  font-size: 18;
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+#Navbar li {
+  display: inline;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  display: inline;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+
+  color: crimson;
+}
+
+
+
+
+#work {
+  background: hotpink;
+  padding: 20px;
+  list-style: square inside url("sqpurple.gif");
+  font-size: x-large;
+  font-family: 'Pontano Sans', sans-serif;
+
+}
+
+#work li {
+  background: rgb(248, 169, 209);
+  margin: 5px;
+  font-size: larger;
+  font-family: 'Pontano Sans', sans-serif;
+}
+
+#mine {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#arth{
+  font-size: 40px;
+  background-color: hotpink;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: ivory;
+  margin: 20%;
+}
+
+.naruto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.narutop {
+  font-size: x-large;
+  margin: 10%;
+}
+/*#hisoka {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hisokap {
+  font-size: x-large;
+  margin: 10%;
+}
+#couple {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#couplep {
+  font-size: x-large;
+  margin: 10%;
+}*/
+#abt{
+  font-size: 40px;
+  background-color: hotpink;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: ivory;
+  margin: 20%;
+}
+.abtp{
+  margin: 10%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background-color: hotpink;
+color: ivory;
+font-size: x-large;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+
+
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Homemade Apple', cursive;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:68px;
+}
+p {
+  font-family: 'Architects Daughter', cursive;
+  letter-spacing: 1px;
+  font-size:25px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg,rgb(253, 117, 185) 0%, lemonchiffon 100%);
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+
+
+
+
+/*register form*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  font-family: 'Pontano Sans', sans-serif;
+  padding: 16px;
+  background-image: linear-gradient(to bottom right, rgb(233, 173, 203), lemonchiffon);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border:ivory;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color:hotpink;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+/*request*/
+h3{
+  font-size: 40px;
+  background-color: hotpink;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: ivory;
+  margin: 20%;
+}
+ .container {
+max-width: 640px;
+margin: 30px auto;
+background:hotpink;
+border-radius: 8px;
+padding: 20px;
+}
+.comment {
+display: block;
+transition: all 1s;
+}
+.commentClicked {
+min-height: 0px;
+border: 1px solid #eee;
+border-radius: 5px;
+padding: 5px 10px
+}
+.container textarea {
+width: 90%;
+border: none;
+background: #E8E8E8;
+padding: 5px 10px;
+height: 50%;
+border-radius: 5px 5px 0px 0px;
+border-bottom: 2px solid wheat;
+transition: all 0.5s;
+margin-top: 15px;
+}
+button.primaryContained {
+background: rgb(134, 0, 67);
+color: #fff;
+padding: 10px 10px;
+border: none;
+margin-top: 0px;
+cursor: pointer;
+text-transform: uppercase;
+letter-spacing: 4px;
+box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+transition: 1s all;
+font-size: 10px;
+border-radius: 5px;
+}
+button.primaryContained:hover {
+background: rgb(223, 163, 193);
+}
+
