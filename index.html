@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,16 +20,36 @@
     <title>Anime Art Factory</title>
 </head>
 
+<div class="container-fluid">
 <body>
     <header>
-        <ul id="Navbar">
+        
+        <div class="topnav" id="myTopnav">
 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#request">Request art</a></li>
-            <li><a href="#aboutme">About</a></li>
-            <li><a href="form.html" target="_blank">Register</a></li>
+            <a href="index.html">Home</a>
+            <a href="#request">Request art</a>
+            <a href="#aboutme">About</a>
+            <a href="form.html" target="_blank">Register</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            
+            
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
 
-        </ul>
+        
+        
     </header>
     <hr>
 
@@ -77,7 +99,8 @@
 
 
 
-
+    
+        
     <ul id="work">Work collection
         <li>Anime/Manga fanart</li>
         <li>Anime glass painting</li>
@@ -85,6 +108,7 @@
     </ul>
     <hr>
     <section>
+            
         <h2 id="arth">Artworks</h2>
         <p class="narutop">Team 7 was a Konohagakure team formed under the leadership of Kakashi Hatake. Two-and-a-half
             years after
@@ -93,6 +117,7 @@
             Sai joining the team, the group went by Team Yamato during the former's leadership.</p>
         <img src="Naruto.jpg" alt="Naruto" style="width:50%" class="naruto">
         <hr>
+    
         <p class="narutop">Personality. Hisoka is portrayed as entirely self-serving, self-absorbed, and selfish; he
             does
             whatever he likes as long as it pleases him in some way. His insatiable love for spilling the blood of
@@ -154,7 +179,7 @@
     <footer>
 
         <h2 id="abt"><a name="aboutme">About</a></h2>
-        <img src="Two-696.jpg" style="width:18%" id="mine">
+        <img src="Two-696.jpg" style="width:25%" id="mine">
 
         <p class="abtp">Just me ,myself and I exploring the world of art!!!<br>
             Hi, I'am Jasmit Kaur , I love painting and expressing my ideas and things I like on paper using colours and
@@ -163,15 +188,19 @@
             work as templates. Soon I'll start selling my art work and you can also request an art or an artwork for
             your
             Favorite character. </p>
-        <p class="abtp">Do not hesitate to contact me!<br> G-mail jasmitkaurjassi762@gmail.com</p>
+        
 
         <br>
         <div class="footer">
-            copyright &copy; JassieK 2021. All Rights Reserved
+            
+            <p class = "footer" >copyright &copy; JassieK 2021. All Rights Reserved</p>
         </div>
     </footer>
 
 
-</body>
 
+
+
+</body>
+</div>
 </html>
